@@ -20,12 +20,16 @@ If you would like to download and run the .py code, you need to edit the paths o
 
 ## Architechture of DNN :
 ![alt text](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Screen%20Shot%202021-09-30%20at%207.37.35%20AM.png)
+- Convert DNA sequences into one-hot matrices of dimension 100x4.
 - First there are two convolutional layers extracting features. 
 - Then there are ReLu layers preventing 'dying ReLU' problem and speeding up training. 
 - Then Max Pooing and Average Pooling are done in parallel to summarize the features. They summarize the features in different ways, so I used both of them.
 - After flattening into Dim 1, it goes through a batch normalization to normalize the output of the previous layers, reducing the dependence of gradients on the scale of the parameters or their initial values. 
 - Then it go through a fully connected layer, then dropout 50\% to reduce overfitting.
 - Then it go through the last fully connected layer, and output a number in (0,1) using activation function - sigmoid, which corresponds to the probability of the sequence being a positive example.
+
+## Other Thoughts & Challenges :
+Another idea would be to use GANs model, which includes a discriminator and a generator generating fake data. But there's an issue here, what we want to generate is one-hot matrices, but there's no proper activation function. I tried to use softmax activationn function to produce 100x4 matrix, then convert it into one-hot matrix, then there will be an error - No gradients provided at variables [...]. I don't know if there's any solution to that. But if the generator  generates 100x4 float matrix instead of one-hot matrix, then the performance of GANs will be really bad. 
 ## Train the model :
 Since I don't have any test dataset, I used 80\% of the data (composed of positive labeled data and generated negative labeled data) as train dataset, and the remaining 20\% as test dataset.
 ## Evaluate the model :
