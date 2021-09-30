@@ -19,7 +19,7 @@ Given a list of DNA sequences bound to an unknown Transcription Factor, we would
 If you would like to download and run the .py code, you need to edit the paths of storing train.csv and trained model.
 
 ## Architechture of DNN :
-![alt text](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/Screen%20Shot%202021-09-30%20at%207.37.35%20AM.png)
+![alt text](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Screen%20Shot%202021-09-30%20at%207.37.35%20AM.png)
 - First there are two convolutional layers extracting features. 
 - Then there are ReLu layers preventing 'dying ReLU' problem and speeding up training. 
 - Then Max Pooing and Average Pooling are done in parallel to summarize the features. They summarize the features in different ways, so I used both of them.
@@ -32,6 +32,6 @@ Since I don't have any test dataset, I used 80\% of the data (composed of positi
 After getting the model and predict it on test dataset, we can evaluate its performance by ROC and AUC since it's a binary classification. And the ROC\&AUC of the two models (respectively trained using reverse sequences and shuffled sequences as negative data) are plotted as follows :
 Model 1  (Reversed DNA as negative data)                   |  Model 2 (Shuffled DNA as nagative data)
 :---------------------------------:|:-----------------------------------:
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/Dis_1_ROC.png)  |  ![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/Dis_2_ROC.png)
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Dis_1_ROC.png)  |  ![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Dis_2_ROC.png)
 
 I also want to have a more intuitive insight to the binding preference of this TF, so I used motif_plotter to extract the learned motif.
