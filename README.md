@@ -35,3 +35,9 @@ Model 1  (Reversed DNA as negative data)                   |  Model 2 (Shuffled 
 ![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Dis_1_ROC.png)  |  ![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Dis_2_ROC.png)
 
 I also want to have a more intuitive insight to the binding preference of this TF, so I used motif_plotter to extract the learned motif.
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif1.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif2.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif3.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif4.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif5.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif6.png) 
