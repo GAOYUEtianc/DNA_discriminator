@@ -35,9 +35,20 @@ Model 1  (Reversed DNA as negative data)                   |  Model 2 (Shuffled 
 ![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Dis_1_ROC.png)  |  ![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Dis_2_ROC.png)
 
 I also want to have a more intuitive insight to the binding preference of this TF, so I used motif_plotter to extract the learned motif.
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif1.png) 
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif2.png) 
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif3.png) 
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif4.png) 
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif5.png) 
-![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif6.png) 
+
+Here are the motif plots for Model 1 (use reverse sequences as negative data)
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_1_1.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_1_2.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_1_3.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_1_4.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_1_5.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_1_6.png) 
+
+And here are the motif plots for Model 2 (use shuffled sequences as negative data)
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_2_1.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_2_2.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_2_3.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_2_4.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_2_5.png) 
+![](https://github.com/GAOYUEtianc/DNA_discriminator/blob/main/image/Motif_2_6.png) 
+
